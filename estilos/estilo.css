@@ -1,0 +1,291 @@
+/* Estilo general de todas las paginas */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color:rgb(244,249,244);
+    display: grid;
+    grid-template-rows: 300px 400px 60px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: "encabezado encabezado encabezado encabezado "
+                         "main   main    main       aside       "
+                         "footer     footer     footer     footer     ";
+}
+
+header{
+    grid-area: encabezado;
+    background-image: linear-gradient(rgb(167,215,197),rgb(244, 249, 244));
+}
+main{
+    grid-area: main;
+}
+footer{
+    background-image: linear-gradient(rgb(167,215,197),rgb(244, 249, 244));
+    font-family: 'Ubuntu', Arial, Helvetica, sans-serif;
+    grid-area: footer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+
+a{
+    font-family: 'Ubuntu', Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    font-size: 20px;
+    text-align: end;
+    color: rgb(92, 141, 137);
+}
+/* Estilo del index */
+.nuevoMenu{
+    display: grid;
+    grid-area: encabezado;
+    grid-template-rows: 100px 100px 100px;
+    grid-template-columns: 25% 25% 25% 25% ;
+    grid-template-areas: "logo  encabezado encabezado encabezado"
+                         "none  subt       subt       subt"
+                         "menu1 menu2      menu3      menu4";
+}
+.logo{
+    grid-area: logo;
+}
+.logo:hover{
+    transform :scale(2,2);
+}
+.logo img{
+    width: 100%;
+    height: 100%;
+}
+.encabezado{
+    
+    grid-area: encabezado;  
+}
+
+.subt{
+    
+    grid-area: subt;
+    text-align: center;
+}
+.menu1{
+ 
+ grid-area: menu1;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+
+}
+.menu1:hover{
+    background-color: rgb(244, 249, 244);
+}
+.menu2{
+  
+    grid-area: menu2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+     
+   }
+.menu2:hover{
+    background-color: rgb(244, 249, 244);
+ }
+.menu3{
+  
+    grid-area: menu3;   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.menu3:hover{
+    background-color: rgb(244, 249, 244);
+}
+.menu4{
+  
+    grid-area: menu4;
+    display: flex;
+    align-items: center;   
+    justify-content: center;
+}
+.menu4:hover{
+    background-color: rgb(244, 249, 244);
+}
+
+
+
+/* letras*/
+h1{
+    color: rgb(92, 141, 137);
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+    font-size: 60px;
+}
+h2{
+    color: rgb(116, 180, 155);
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 40px;
+}
+h3{
+    font-family: 'Ubuntu', sans-serif;
+    color: rgb(92, 141, 137);
+ }
+h4{
+    font-family: 'Ubuntu', sans-serif;
+    color: rgb(92, 141, 137);
+}
+
+
+
+
+
+/* Estilo del main*/
+.contenedorMain {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 50px 400px 50px;
+    grid-template-areas: "tituloMain  tituloMain  tituloMain  "
+                         "cajaMain    cajaMain    cajaMain    "
+                         "valoracion1 valoracion2 valoracion3  ";
+}
+.tituloMain{
+    grid-area: tituloMain;
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+}
+.cajaMain{
+    grid-area: cajaMain;
+    display: flex;
+    background-color: rgb(198, 198, 245);
+
+}
+.recomendacion{
+    height: 300px;
+    width: 100%;
+    padding-left: 2px;
+}
+.recomendacion .imagen img{
+    height: 300px;
+    width: 100%;
+}
+.recomendacion .valoracion{
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+}
+/*estilo del aside*/
+aside{
+    grid-area: aside;
+    width: 100%;
+    height: 400px;
+}
+
+.publicidad{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+.publicidad img{
+    width: 100%;
+    height: 350px;
+}
+
+
+
+
+
+
+/*Estilo seccion locales*/
+.sucursales{
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 50px 300px;
+    grid-template-areas: "tituloSucursales tituloSucursales"
+                         "sucursal1        sucursal2";
+}
+.tituloSucursales{
+    grid-area: tituloSucursales;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    font-size: 30px;
+    justify-content: center;
+}
+.sucursal1{
+    grid-area: sucursal1;
+    width: 100%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.sucursal1 img{
+    width: 100%;
+    height: 350px;
+}
+.sucursal2{
+    grid-area: sucursal2;
+    width: 100%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.sucursal2 img{
+    width: 100%;
+    height: 350px;
+}
+.horarios{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.horarios h3{
+font-size: 30px;    
+}
+.horarios h4{
+    font-size: 25px;
+}
+/* Estilo seccion Reservas*/
+.formularioReserva{
+    background-color: rgb(167, 215, 197);
+    width: 100%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+/* Estilo seccion Contacto */
+.mainContacto{
+    background-color: rgb(167, 215, 197);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+/*Estilo de la lista*/
+ul{
+    background-color: white;
+    
+}
+li{
+    font-size: 20px;
+}
+
+
+
+
+
+
+
+

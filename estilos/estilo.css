@@ -42,11 +42,11 @@ a{
 .nuevoMenu{
     display: grid;
     grid-area: encabezado;
-    grid-template-rows: 100px 100px 100px;
-    grid-template-columns: 25% 25% 25% 25% ;
-    grid-template-areas: "logo  encabezado encabezado encabezado"
-                         "none  subt       subt       subt"
-                         "menu1 menu2      menu3      menu4";
+    grid-template-rows: 100px 100px 50px;
+    grid-template-columns: 20% 20% 20% 20% 20% ;
+    grid-template-areas: "logo  encabezado encabezado encabezado encabezadp"
+                         "none  subt       subt       subt       subt"
+                         "menu  menu       menu       menu       menu";
 }
 .logo{
     grid-area: logo;
@@ -68,49 +68,56 @@ a{
     grid-area: subt;
     text-align: center;
 }
+.menu{
+    grid-area: menu;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
 .menu1{
- 
- grid-area: menu1;
- display: flex;
- align-items: center;
+ width: 20%;
  justify-content: center;
-
+ display: flex;
+ 
 }
 .menu1:hover{
     background-color: rgb(244, 249, 244);
 }
 .menu2{
-  
-    grid-area: menu2;
     display: flex;
-    align-items: center;
+    width: 20%;
     justify-content: center;
-     
+
    }
 .menu2:hover{
     background-color: rgb(244, 249, 244);
  }
 .menu3{
-  
-    grid-area: menu3;   
+    width: 20%;  
     display: flex;
-    align-items: center;
     justify-content: center;
+
 }
 .menu3:hover{
     background-color: rgb(244, 249, 244);
 }
 .menu4{
-  
-    grid-area: menu4;
     display: flex;
-    align-items: center;   
     justify-content: center;
+    width: 20%;
 }
 .menu4:hover{
     background-color: rgb(244, 249, 244);
 }
-
+.menu5{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+}
+.menu5:hover{
+    background-color: rgb(244, 249, 244);
+}
 
 
 /* letras*/
@@ -173,6 +180,9 @@ h4{
     display: flex;
     justify-content: center;
     font-size: 30px;
+}
+.img-thumbnail{
+    background-color: rgb(116, 180, 155); ;
 }
 /*estilo del aside*/
 aside{

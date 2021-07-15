@@ -57,10 +57,53 @@
         </div>
     </header>
     <main>
-        <div class="tituloMain">
-            <h2> Nuestros mas valorados</h2>
+        <div class="container-fluid contenedorCarrusel">
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active contenedorCarrusel">
+                    <img src="imagenes/plato1.jpg" class="d-block w-100 img-thumbnail tamImg" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Plato 1</h5>
+                      <p>Nuestro plato estrella por ser el mejor valorado por los clientes</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item contenedorCarrusel">
+                    <img src="imagenes/plato2.jpg" class="d-block w-100 tamImg" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Plato 2</h5>
+                      <p>El segundo mejor plato de nosotros pero tambien el mas pedido</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item contenedorCarrusel">
+                    <img src="imagenes/plato3.png" class="d-block w-100 tamImg" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Plato 3</h5>
+                      <p>Este plato es nuestra primera recomendacion para los nuevos clientes</p>
+                    </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+
+
+
         </div>
-        <div class="cajaMain ">
+        <!-- <div class="tituloMain">
+            <h2> Nuestros mas valorados</h2>
+        </div> -->
+        <!-- <div class="cajaMain ">
             <div class="recomendacion">
                 <div class="imagen ">
                     <img src="imagenes/plato1.jpg" class="img-thumbnail" alt="...">
@@ -86,11 +129,23 @@
                     <h3>Bueno</h3>
                 </div>
             </div>
-        </div>    
+        </div>     -->
     </main>
     <!--fin del main-->
-
-    <!--Inicio del aside-->
+<!-- inicio de la seccion historia-->    
+    <section>
+        <div class="seccionHistoria">
+            <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#demo">
+                De donde venimos? </button>
+                <div id="demo" class="collapse"> 
+                    <p>
+                        Nuestro restaurante fue fundado... Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste voluptates harum sunt expedita officiis odio impedit recusandae eius, vitae nemo fugit dignissimos tempore accusamus eos repudiandae possimus quae voluptatibus aspernatur.
+                    </p>
+                </div>
+                
+        </div>
+    </section>
+<!--Inicio del aside-->
     <aside>
         <div class="publicidad">
             <div>
@@ -113,6 +168,11 @@
         <div class="red3"><a href="#"></a>Instagram</div>
     </footer>
     <!--fin del footer-->
+
+<!--     scripts de bootstrap -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 </body>
 
 </html>

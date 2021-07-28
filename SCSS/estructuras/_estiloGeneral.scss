@@ -1,0 +1,29 @@
+/* Estilo general de todas las paginas */
+body {
+    background-color: #f4f9f4;
+    display: grid;
+    grid-template-rows: 300px auto auto 60px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: "encabezado encabezado encabezado encabezado "
+   "main       main       main       aside       "
+   "section    section    section    none"
+   "footer     footer     footer     footer     "; }
+  
+  header {
+    grid-area: encabezado;
+    background-image: linear-gradient(#a7d7c5, #f4f9f4); }
+  
+  main {
+    grid-area: main; }
+  
+  section {
+    grid-area: section;
+    background-image: linear-gradient; }
+  
+  footer {
+    background-image: linear-gradient(#a7d7c5, #f4f9f4);
+    font-family: "Ubuntu", Arial, Helvetica, sans-serif;
+    grid-area: footer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; }

@@ -1,0 +1,74 @@
+/* Estilo del index */
+
+/* Estilo del main*/
+.contenedorMain {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 50px 400px 50px;
+    grid-template-areas: "tituloMain  tituloMain  tituloMain  "
+                         "cajaMain    cajaMain    cajaMain    "
+                         "valoracion1 valoracion2 valoracion3  ";
+}
+.tituloMain{
+    grid-area: tituloMain;
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+}
+.cajaMain{
+    grid-area: cajaMain;
+    display: flex;
+    background-color: rgb(198, 198, 245);
+
+}
+.recomendacion{
+    height: 300px;
+    width: 100%;
+    padding-left: 2px;
+}
+.recomendacion .imagen img{
+    height: 300px;
+    width: 100%;
+}
+.recomendacion .valoracion{
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+}
+.contenedorCarrusel{
+    height:400px ;
+}
+.tamImg{
+    width: 100%;
+    height: 100%;
+}
+.img-thumbnail{
+    background-color: $color2 ;
+}
+/* estilo de la seccion historia*/
+.seccionHistoria{
+    width: 80%;
+}
+.seccionHistoria p{
+    font-family: $fuenteH;
+    color: $color1;  
+}
+/*estilo del aside*/
+aside{
+    grid-area: aside;
+    width: 100%;
+    height: 400px;
+}
+
+.publicidad{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+.publicidad img{
+    width: 100%;
+    height: 350px;
+}

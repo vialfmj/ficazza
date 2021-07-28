@@ -1,0 +1,434 @@
+/* Estilo general de todas las paginas */
+* {
+  margin: 0px;
+  padding: 0px; }
+
+/* colores*/
+/* tipos de letras */
+h1 {
+  color: #5c8d89;
+  font-family: "Ubuntu", sans-serif;
+  text-align: center;
+  font-size: 60px; }
+
+h2 {
+  color: #74b49b;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 40px; }
+
+h3 {
+  font-family: "Ubuntu", sans-serif;
+  color: #5c8d89; }
+
+h4 {
+  font-family: "Ubuntu", sans-serif;
+  color: #5c8d89; }
+
+a {
+  font-family: 'Ubuntu', Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  font-size: 20px;
+  text-align: end;
+  color: #5c8d89; }
+
+/* Estilo general de todas las paginas */
+body {
+  background-color: #f4f9f4;
+  display: grid;
+  grid-template-rows: 300px auto auto 60px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-areas: "encabezado encabezado encabezado encabezado " "main       main       main       aside       " "section    section    section    none" "footer     footer     footer     footer     "; }
+
+header {
+  grid-area: encabezado;
+  background-image: linear-gradient(#a7d7c5, #f4f9f4); }
+
+main {
+  grid-area: main; }
+
+section {
+  grid-area: section;
+  background-image: linear-gradient; }
+
+footer {
+  background-image: linear-gradient(#a7d7c5, #f4f9f4);
+  font-family: "Ubuntu", Arial, Helvetica, sans-serif;
+  grid-area: footer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; }
+
+/* estilo del header */
+.nuevoMenu {
+  display: grid;
+  grid-area: encabezado;
+  grid-template-rows: 100px 100px 100px;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+  grid-template-areas: "logo  encabezado encabezado encabezado encabezadp" "none  subt       subt       subt       subt" "menu  menu       menu       menu       menu"; }
+
+.logo {
+  grid-area: logo; }
+
+.logo:hover {
+  transform: scale(2, 2); }
+
+.logo img {
+  width: 100%;
+  height: 100%; }
+
+.encabezado {
+  grid-area: encabezado; }
+
+.subt {
+  grid-area: subt;
+  text-align: center; }
+
+.menu {
+  width: 100%;
+  grid-area: menu;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between; }
+
+.menu1 {
+  width: 20%;
+  justify-content: center;
+  display: flex; }
+
+.menu1:hover {
+  background-color: #f4f9f4; }
+
+.menu2 {
+  display: flex;
+  width: 20%;
+  justify-content: center; }
+
+.menu2:hover {
+  background-color: #f4f9f4; }
+
+.menu3 {
+  width: 20%;
+  display: flex;
+  justify-content: center; }
+
+.menu3:hover {
+  background-color: #f4f9f4; }
+
+.menu4 {
+  display: flex;
+  justify-content: center;
+  width: 20%; }
+
+.menu4:hover {
+  background-color: #f4f9f4; }
+
+.menu5 {
+  width: 20%;
+  display: flex;
+  justify-content: center; }
+
+.menu5:hover {
+  background-color: #f4f9f4; }
+
+/* Estilo del index */
+/* Estilo del main*/
+.contenedorMain {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 50px 400px 50px;
+  grid-template-areas: "tituloMain  tituloMain  tituloMain  " "cajaMain    cajaMain    cajaMain    " "valoracion1 valoracion2 valoracion3  "; }
+
+.tituloMain {
+  grid-area: tituloMain;
+  display: flex;
+  justify-content: center;
+  font-size: 30px; }
+
+.cajaMain {
+  grid-area: cajaMain;
+  display: flex;
+  background-color: #c6c6f5; }
+
+.recomendacion {
+  height: 300px;
+  width: 100%;
+  padding-left: 2px; }
+
+.recomendacion .imagen img {
+  height: 300px;
+  width: 100%; }
+
+.recomendacion .valoracion {
+  display: flex;
+  justify-content: center;
+  font-size: 30px; }
+
+.contenedorCarrusel {
+  height: 400px; }
+
+.tamImg {
+  width: 100%;
+  height: 100%; }
+
+.img-thumbnail {
+  background-color: #74b49b; }
+
+/* estilo de la seccion historia*/
+.seccionHistoria {
+  width: 80%; }
+
+.seccionHistoria p {
+  font-family: "Ubuntu", sans-serif;
+  color: #5c8d89; }
+
+/*estilo del aside*/
+aside {
+  grid-area: aside;
+  width: 100%;
+  height: 400px; }
+
+.publicidad {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center; }
+
+.publicidad img {
+  width: 100%;
+  height: 350px; }
+
+/*Estilo seccion locales*/
+/* bloque sucursales */
+.sucursales {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 50px 400px;
+  grid-template-areas: "tituloSucursales tituloSucursales" "sucursal1        sucursal2"; }
+
+.sucursales-titulo {
+  grid-area: tituloSucursales;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  font-size: 30px;
+  justify-content: center; }
+
+.sucursales-primera {
+  grid-area: sucursal1;
+  width: 100%;
+  height: 100%;
+  padding-left: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+.sucursales-primera-img {
+  width: 100%;
+  height: 100%; }
+
+.sucursales-primera-img img {
+  width: 100%;
+  height: 100%; }
+
+.sucursales-segunda {
+  grid-area: sucursal2;
+  width: 100%;
+  height: 100%;
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+.sucursales-segunda-img {
+  width: 100%;
+  height: 100%; }
+
+.sucursales-segunda-img img {
+  width: 100%;
+  height: 100%; }
+
+/* bloque horarios     */
+.horarios {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center; }
+
+.horarios-titulo h3 {
+  font-size: 30px; }
+
+.horarios-dia h4, .horarios-noche h4 {
+  font-size: 25px; }
+
+/* bloque ubicaciones */
+.ubicaciones {
+  width: 100%;
+  height: 300px;
+  display: flex; }
+
+.ubicaciones-primera {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; }
+
+.ubicaciones-primera-direccion {
+  width: 100%;
+  height: 10%; }
+
+.ubicaciones-primera-mapa {
+  width: 100%;
+  height: 80%; }
+
+.ubicaciones-primera-mapa img {
+  width: 100%;
+  height: 75%; }
+
+.ubicaciones-segunda {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; }
+
+.ubicaciones-segunda-direccion {
+  width: 100%;
+  height: 10%; }
+
+.ubicaciones-segunda-mapa {
+  width: 100%;
+  height: 80%; }
+
+.ubicaciones-segunda-mapa img {
+  width: 100%;
+  height: 75%; }
+
+/* bloque servicios */
+.servicios {
+  width: 100%;
+  height: 320px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 50px 250px;
+  grid-template-areas: "servicios  servicios       servicios" "vigilancia estacionamiento wifi";
+  grid-column-gap: 10px; }
+
+.servicios-titulo {
+  grid-area: servicios;
+  width: 100%;
+  height: 100%; }
+
+.servicios-vigilancia {
+  grid-area: vigilancia;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%; }
+
+.servicios-vigilancia-img {
+  width: 100%;
+  height: 100%; }
+
+.servicios-vigilancia-img img {
+  width: 100%;
+  height: 100%; }
+
+.servicios-vigilancia-nombre {
+  width: 100%;
+  height: 100%;
+  text-align: center; }
+
+.servicios-estacionamiento {
+  grid-area: estacionamiento;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%; }
+
+.servicios-estacionamiento-img {
+  width: 100%;
+  height: 100%; }
+
+.servicios-estacionamiento-img img {
+  width: 100%;
+  height: 100%; }
+
+.servicios-estacionamiento-nombre {
+  width: 100%;
+  height: 100%;
+  text-align: center; }
+
+.servicios-wifi {
+  grid-area: wifi;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%; }
+
+.servicios-wifi-img {
+  width: 100%;
+  height: 100%; }
+
+.servicios-wifi-img img {
+  width: 100%;
+  height: 100%; }
+
+.servicios-wifi-nombre {
+  width: 100%;
+  height: 100%;
+  text-align: center; }
+
+/* Estilo seccion Reservas*/
+.formularioReserva {
+  background-color: #a7d7c5;
+  width: 100%;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center; }
+
+/* Estilo seccion Contacto */
+.mainContacto {
+  background-color: #a7d7c5;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center; }
+
+/* Estilo seccion Carta */
+.nav1 {
+  width: 100%;
+  grid-area: menu;
+  height: 50px; }
+
+.elementoTabla {
+  background-color: #f4f9f4;
+  display: flex;
+  justify-content: center;
+  border: 1px solid #5c8d89; }
+
+.elementoTabla h3 {
+  text-align: center; }
+
+.filaVacia {
+  height: 40px; }
+
+/*Estilo de la lista*/
+ul {
+  background-color: white; }
+
+li {
+  font-size: 20px; }

@@ -3,6 +3,10 @@
   margin: 0px;
   padding: 0px; }
 
+.padding-bloque, .nav1, .nav2, .tabla-carnes, .tabla-pastas, .tabla-ensaladas {
+  padding-top: 20px;
+  padding-bottom: 20px; }
+
 /* colores*/
 /* tipos de letras */
 h1 {
@@ -412,19 +416,31 @@ aside {
 .nav1 {
   width: 100%;
   grid-area: menu;
-  height: 50px; }
+  height: 50px;
+  display: block; }
 
-.elementoTabla {
+.tabla-general-titulo h3 {
   background-color: #f4f9f4;
   display: flex;
   justify-content: center;
-  border: 1px solid #5c8d89; }
+  border: 1px solid #5c8d89;
+  text-align: center;
+  font-size: 50px;
+  color: #5c8d89; }
 
-.elementoTabla h3 {
-  text-align: center; }
+.tabla-general-elemento {
+  background-color: #f4f9f4;
+  display: flex;
+  justify-content: center;
+  border: 1px solid #5c8d89;
+  text-align: center;
+  font-size: 30px;
+  color: #74b49b; }
 
-.filaVacia {
-  height: 40px; }
+.contenedor-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; }
 
 /*Estilo de la lista*/
 ul {

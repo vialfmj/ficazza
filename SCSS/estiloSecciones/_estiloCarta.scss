@@ -1,59 +1,51 @@
 /* Estilo seccion Carta */
-.nav1{
-    width: 100%;
-    grid-area: menu;
-    height: 50px;
-    display: block;
+
+.carta-titulo{
+    @extend .padding-bloque;
+    text-align: center;
+}
+.tabla-carnes {
     @extend .padding-bloque;
 }
-.nav2{
+.tabla-pastas {
     @extend .padding-bloque;
 }
-.tabla-carnes{
-    @extend .padding-bloque;
-}
-.tabla-pastas{
-    @extend .padding-bloque;
-}
-.tabla-ensaladas{
+.tabla-ensaladas {
     @extend .padding-bloque;
 }
 
-@mixin elemento ($tipoElemento) {
-
-    background-color:$color4;
+@mixin elemento($tipoElemento) {
+    background-color: $color4;
     display: flex;
     justify-content: center;
     border: 1px solid $color1;
     text-align: center;
     @if $tipoElemento == t {
         font-size: 50px;
-        color: $color1; 
-    }       
-    @else if $tipoElemento == p{
+        color: $color1;
+    } @else if $tipoElemento == p {
         font-size: 30px;
-        color:$color2;
+        color: $color2;
     }
 }
-.tabla-general-titulo{
-    h3{
+.tabla-general-titulo {
+    h3 {
         @include elemento(t);
     }
 }
-.tabla-general-elemento{
+.tabla-general-elemento {
     @include elemento(p);
 }
 
-.contenedor-main{
+.contenedor-main {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 /*Estilo de la lista*/
-ul{
+ul {
     background-color: white;
-    
 }
-li{
+li {
     font-size: 20px;
 }

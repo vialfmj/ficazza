@@ -1,36 +1,33 @@
 /*Estilo seccion locales*/
 /* bloque sucursales */
 .sucursales{
-    display: grid;
-    width: 100%;
-    
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 50px 400px;
-    grid-template-areas: "tituloSucursales tituloSucursales"
-                         "sucursal1        sucursal2";
-   
+   width: auto;
+   height: 400px;
 }
 .sucursales-titulo{
-    grid-area: tituloSucursales;
-    width: 100%;
-    height: 100% ;
-    display: flex;
-    font-size: 30px;
-    justify-content: center;
+    border: solid 3px;
+    border-color: $color1;
+    width: auto;
+    font-size: 40px;
+    align-items: center;
+    text-align: center;
+    display: block;
 }
 .sucursales-primera{
-    grid-area: sucursal1;
-    width: 100%;
-    height: 100%;
-    padding-left: 10px;
+    height: 350px;
+    padding-left: 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-.sucursales-primera-img{
+.sucursales-primera-titulo{
     width: 100%;
-    height: 100%;
+    height: 10%;
+    text-align: center;
+}
+.sucursales-primera-img{
+   height: 90%;
 }
 .sucursales-primera-img img{
     width: 100%;
@@ -38,18 +35,20 @@
     
 }
 .sucursales-segunda{
-    grid-area: sucursal2;
-    width: 100%;
-    height: 100%;
+    height: 350px;
     padding-left: 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-.sucursales-segunda-img{
+.sucursales-segunda-titulo{
     width: 100%;
-    height: 100%;
+    height: 10%;
+    text-align: center;
+}
+.sucursales-segunda-img{
+    height: 90%;
 }
 .sucursales-segunda-img img{
     width: 100%;
@@ -60,8 +59,7 @@
 /* bloque horarios     */
 
 .horarios {
-    width: 100%;
-    height: 100%;
+    height: 350px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -75,12 +73,18 @@ font-size: 30px;
 }
 /* bloque ubicaciones */
 .ubicaciones{
-    width: 100%;
-    height: 300px;
+
+    height: 500px;
     display: flex;
+    flex-direction: column;
+}
+.ubicaciones-titulo{
+    height: 30%;
+}
+.ubicaciones-contenedor{
+    height: 70%;
 }
 .ubicaciones-primera{
-    width: 50%;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -88,63 +92,53 @@ font-size: 30px;
 
 }
 .ubicaciones-primera-direccion{
-    width: 100%;
-    height: 10%;
+    height: 30%;
 }
 .ubicaciones-primera-mapa{
-    width: 100%;
-    height: 80%;
+    height: 70%;
 }
 .ubicaciones-primera-mapa img{
     width: 100%;
-    height:75%;
+    height:100%;
 }
 .ubicaciones-segunda{
-    width: 50%;
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 .ubicaciones-segunda-direccion{
-    width: 100%;
-    height: 10%;
+    height: 30%;
 }
 .ubicaciones-segunda-mapa{
-    width: 100%;
-    height: 80%;
+    height: 70%;
 }
 .ubicaciones-segunda-mapa img{
     width: 100%;
-    height: 75%;
+    height: 100%;
 }
 /* bloque servicios */
 .servicios{
     width: 100%;
-    height: 320px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 50px 250px;
-    grid-template-areas: "servicios  servicios       servicios"
-                         "vigilancia estacionamiento wifi";
-    grid-column-gap: 10px;                    
+    height: 350px;                   
 }
 .servicios-titulo{
-    grid-area: servicios;
+    text-align: center;
+    height: 30%;
+}
+.servicios-contenedor{
     width: 100%;
-    height: 100%;
+    height: 70%;
 }
 .servicios-vigilancia{
-    grid-area: vigilancia;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 100%;
     height: 100%;
 }
 .servicios-vigilancia-img{
     width: 100%;
-    height: 100%;
+    height: 80%;
 }
 .servicios-vigilancia-img img{
     width: 100%;
@@ -152,20 +146,18 @@ font-size: 30px;
 }
 .servicios-vigilancia-nombre{
     width: 100%;
-    height: 100%;
+    height: 20%;
     text-align: center;
 }
 .servicios-estacionamiento{
-    grid-area: estacionamiento;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 100%;
     height: 100%;
 }
 .servicios-estacionamiento-img{
     width: 100%;
-    height: 100%;
+    height: 80%;
 }
 .servicios-estacionamiento-img img{
     width: 100%;
@@ -173,20 +165,18 @@ font-size: 30px;
 }
 .servicios-estacionamiento-nombre{
     width: 100%;
-    height: 100%;
+    height: 20%;
     text-align: center;
 }
 .servicios-wifi{
-    grid-area: wifi;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 100%;
     height: 100%;
 }
 .servicios-wifi-img{
     width: 100%;
-    height: 100%;
+    height: 80%;
 }
 .servicios-wifi-img img{
     width: 100%;
@@ -194,6 +184,24 @@ font-size: 30px;
 }
 .servicios-wifi-nombre{
     width: 100%;
-    height: 100%;
+    height: 20%;
     text-align: center;
+}
+@media only screen and (max-width: 576px) {
+
+    .sucursales{
+        height: 1050px ;
+    }
+    .sucursales-primera{
+        width: 100%;
+    }
+    .sucursales-segunda-img{
+        width: 100%;
+    }
+    .ubicaciones{
+        height: auto;
+    }
+    .servicios{
+        height: auto;
+    }
 }

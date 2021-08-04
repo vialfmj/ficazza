@@ -4,76 +4,164 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Locales</title>
-        <!-- Link de la tipografia -->
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital@1&display=swap" rel="stylesheet">
-        <!-- Etiquetas de linkeo a Css propio -->
-        <link rel="stylesheet"  href="../estilos/estilo.css">
-    
+        <!-- Link bootstrap-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <!-- Link de la tipografia -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital@1&display=swap" rel="stylesheet">
+    <!-- Etiquetas de linkeo a Css propio -->
+    <!--     <link rel="stylesheet" href="estilos/estilo.css"> -->
+    <link rel="stylesheet" href="../CSS/pruebacss.css">
+    <!-- titulo -->
+    <title>Reserva</title>
 </head>
 <body>
-    <header class="gradiente">
-        <div class="nuevoMenu">
-        
-        <div class="logo">
-            <img src="../imagenes/logo.jpg" alt="">   
+    <header>
+        <!--     encabezado -->
+        <div class="row">
+            <div class="col-2 logo">
+                <img src="../imagenes/logo.jpg" alt="">
+            </div>
+            <div class="col-8 titulo">
+                <h1>Ficcaza</h1>
+            </div>
         </div>
-        <div class="encabezado">
-            <!--Titulo del Restaurante-->
-            <h1>Ficcaza</h1>
+        <div class="row">
+            <div class="col-12 subtitulo">
+                <h2>Explorando Sabores...</h2>
+            </div>
         </div>
-        <div class="subt">
-            <!-- Subtitulo  -->
-            <h2>Explorando Sabores...</h2>
-        
+        <!--         menu -->
+        <div class="container">
+            <div class="row menu">
+                <div class="col-sm-2 menu-item">
+                    <a href="../index.html">Inicio</a>
+                </div>
+                <div class="col-sm-2 menu-item">
+                    <a href="locales.html">Locales</a>
+                </div>
+                <div class="col-sm-2 menu-item">
+                    <a href="Reserva.html">Reserva</a>
+                </div>
+                <div class="col-sm-2 menu-item">
+                    <a href="Contacto.html">Contacto</a>
+                </div>
+                <div class="col-sm-2 menu-item">
+                    <a href="Carta.html">Carta</a>
+                </div>
+            </div>
         </div>
-        <div class="menu container-fluid" >
-            <div class="menu1">
-               <a href="../index.html">Inicio</a>
-           </div>
-           <div class="menu2">
-               <a href="locales.html">Locales</a>
-           </div>
-           <div class="menu3">
-               <a href="Reserva.html">Reservas</a>
-           </div>
-   
-           <div class="menu4">
-               <a href="Contacto.html">Contacto</a>
-           </div>
-       
-           <div class="menu5">
-               <a href="Carta.html">Carta</a>
-               </div>
-           </div>
-        </div>
-        </header>
+
+
+    </header>
 <!--inicio del main-->
 <main>
-<form action="">
-    <div class="formularioReserva">
-        <div>
-            <label for="nombre"> Nombre</label>
-            <input type="text" id="nombre">
-        </div>
-        <div>
-            <label for="email">Email</label>
-            <input type="text" id="email"><br><br>
-        </div>
-        <div>
-            <label for="sucursal">Sucursal en la cual desea reservar</label>
-        <select name="" id="sucursal">
-            <option value="sucursal1">sucursal1</option>
-            <option value="sucursal2">sucursal2</option>
-        </select>
-        </div>
-        <div>
-            <label for="fecha">Ingrese la fecha que desea reservar</label>
-            <input type="text" id="fecha">
-        </div>
-        <div><h4>Gracias por reservar con nosotros. Nos comunicaremos via mail</h4></div>
+    <div class="container-fluid reserva-titulo">
+        <h2>Seccion de reservas</h2>
     </div>
+    <div class="container-fluid formulario-reserva-contenedor">
+        <form>
+            <div class="mb-3">
+                <label for="Nombre" class="form-label">Nombre</label>
+                <input type="Nombre" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <div id="emailHelp" class="form-text">A nombre de quien va a estar hecha la reserva</div>
+              </div>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Email</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <div id="emailHelp" class="form-text">No compartiremos esta informacion con nadie mas</div>
+            </div>
+            <select class="form-select form-select-sm" aria-label=".form-select-sm example">
+                <option selected>Elegi la sucursal en la cual deseas reservar</option>
+                <option value="1">Sucursal1</option>
+                <option value="2">sucursal2</option>
+              </select>
+              <select class="form-select form-select-sm" aria-label=".form-select-sm example">
+                <option selected>Indicanos la cantidad de personas</option>
+                <option value="1">Una</option>
+                <option value="2">Dos</option>
+                <option value="3">Tres</option>
+                <option value="4">Cuatro</option>
+                <option value="5">Cinco</option>
+
+              </select>
+            <div class="container-fluid col-12">
+                <div class="row fecha">
+                    <div class="col-sm-4 fecha-dia">
+                      <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+                          <option selected>Dia</option>
+                          <option value="01">01</option>
+                          <option value="02">02</option>
+                          <option value="03">03</option>
+                          <option value="04">04</option>
+                          <option value="05">05</option>
+                          <option value="06">06</option>
+                          <option value="07">07</option>
+                          <option value="08">08</option>
+                          <option value="09">09</option>
+                          <option value="10">10</option>
+                          <option value="11">11</option>
+                          <option value="12">12</option>
+                          <option value="13">13</option>
+                          <option value="14">14</option>
+                          <option value="15">15</option>
+                          <option value="16">16</option>
+                          <option value="17">17</option>
+                          <option value="18">18</option>
+                          <option value="19">19</option>
+                          <option value="20">20</option>
+                          <option value="21">21</option>
+                          <option value="22">22</option>
+                          <option value="23">23</option>
+                          <option value="24">24</option>
+                          <option value="25">25</option>
+                          <option value="26">26</option>
+                          <option value="27">27</option>
+                          <option value="28">28</option>
+                          <option value="29">29</option>
+                          <option value="30">30</option>
+                        </select>
+                    </div>
+                    <div class="col-sm-4 fecha-mes">
+                        <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+                            <option selected>Mes</option>
+                            <option value="enero">Enero</option>
+                            <option value="febrero">Febrero</option>
+                            <option value="marzo">Marzo</option>
+                            <option value="abril">Abril</option>
+                            <option value="mayo">Mayo</option>
+                            <option value="junio">Junio</option>
+                            <option value="julio">Julio</option>
+                            <option value="agosto">Agosto</option>
+                            <option value="septiembre">septiembre</option>
+                            <option value="octubre">Octubre</option>
+                            <option value="noviembre">Noviembre</option>
+                            <option value="diciembre">Diciembre</option>
+                          </select>
+                    </div>
+                    <div class="col-sm-4 fecha-anio">
+                        <select class="form-select" aria-label="Disabled select example" disabled>
+                            <option selected>2021</option>
+                            <option value="2021">2021</option>
+                          </select>
+                    </div>
+                 
+                </div>
+            </div>
+            <div class="mb-3 form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Captcha</label>
+            </div>
+            <button type="submit" class="btn btn-primary boton-enviar">Enviar</button>
+          </form>
+    </div>
+
+
 </main>
 
 
@@ -91,5 +179,15 @@
     <div class="red3"><a href="#"></a>Instagram</div>
 </footer>
 <!--fin del footer-->
+    <!--     scripts de bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
 </body>
 </html>

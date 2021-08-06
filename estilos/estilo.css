@@ -1,343 +1,359 @@
 /* Estilo general de todas las paginas */
-*{
-    margin: 0px;
-    padding: 0px;
-}
-body{
-    background-color:rgb(244,249,244);
-    display: grid;
-    grid-template-rows: 300px 400px 200px 60px;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-areas: "encabezado encabezado encabezado encabezado "
-                         "main       main       main       aside       "
-                         "section    section    section    none"
-                         "footer     footer     footer     footer     ";
-}
+* {
+  margin: 0px;
+  padding: 0px; }
 
-header{
-    grid-area: encabezado;
-    background-image: linear-gradient(rgb(167,215,197),rgb(244, 249, 244));
-}
-main{
-    grid-area: main;
-}
-section{
-    grid-area: section;
-    background-image: linear-gradient(rgb(167,215,197),rgb(244, 249, 244));
-}
-footer{
-    background-image: linear-gradient(rgb(167,215,197),rgb(244, 249, 244));
-    font-family: 'Ubuntu', Arial, Helvetica, sans-serif;
-    grid-area: footer;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
+.padding-bloque, .carta-titulo, .tabla-carnes, .tabla-pastas, .tabla-ensaladas {
+  padding-top: 40px;
+  padding-bottom: 40px; }
 
+/* colores*/
+/* tipos de letras */
+h1 {
+  color: #5c8d89;
+  font-family: "Ubuntu", sans-serif;
+  text-align: center;
+  font-size: 60px; }
 
-a{
-    font-family: 'Ubuntu', Arial, Helvetica, sans-serif;
-    text-decoration: none;
-    font-size: 20px;
-    text-align: end;
-    color: rgb(92, 141, 137);
-}
+h2 {
+  color: #74b49b;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 40px; }
+
+h3 {
+  font-family: "Ubuntu", sans-serif;
+  color: #5c8d89; }
+
+h4 {
+  font-family: "Ubuntu", sans-serif;
+  color: #5c8d89; }
+
+a {
+  font-family: 'Ubuntu', Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  font-size: 20px;
+  text-align: end;
+  color: #5c8d89; }
+
+/* Estilo general de todas las paginas */
+body {
+  background-color: #f4f9f4; }
+
+header {
+  background-image: linear-gradient(#a7d7c5, #f4f9f4); }
+
+section {
+  background-image: linear-gradient; }
+
+footer {
+  background-image: linear-gradient(#a7d7c5, #f4f9f4);
+  font-family: "Ubuntu", Arial, Helvetica, sans-serif;
+  grid-area: footer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; }
+
+.logo {
+  width: 100px;
+  height: 60px; }
+
+.logo img {
+  width: 100%;
+  height: 100%; }
+
+.titulo {
+  display: flex;
+  justify-content: center;
+  width: 80%;
+  height: 50px; }
+
+.subtitulo {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%; }
+
+.menu {
+  display: flex;
+  justify-content: space-evenly; }
+
+.menu-item {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
 /* Estilo del index */
-.nuevoMenu{
-    display: grid;
-    grid-area: encabezado;
-    grid-template-rows: 100px 100px 100px;
-    grid-template-columns: 20% 20% 20% 20% 20% ;
-    grid-template-areas: "logo  encabezado encabezado encabezado encabezadp"
-                         "none  subt       subt       subt       subt"
-                         "menu  menu       menu       menu       menu";
-}
-.logo{
-    grid-area: logo;
-}
-.logo:hover{
-    transform :scale(2,2);
-}
-.logo img{
-    width: 100%;
-    height: 100%;
-}
-.encabezado{
-    
-    grid-area: encabezado;  
-}
+.carrusel-contenedor {
+  height: 350px;
+  width: 100%; }
 
-.subt{
-    
-    grid-area: subt;
-    text-align: center;
-}
-.menu{
-    width: 100%;
-    grid-area: menu;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-}
-.menu1{
- width: 20%;
- justify-content: center;
- display: flex;
- 
-}
-.menu1:hover{
-    background-color: rgb(244, 249, 244);
-}
-.menu2{
-    display: flex;
-    width: 20%;
-    justify-content: center;
+.tamImg {
+  width: 100%;
+  height: 100%; }
 
-   }
-.menu2:hover{
-    background-color: rgb(244, 249, 244);
- }
-.menu3{
-    width: 20%;  
-    display: flex;
-    justify-content: center;
+.img-thumbnail {
+  background-color: #74b49b; }
 
-}
-.menu3:hover{
-    background-color: rgb(244, 249, 244);
-}
-.menu4{
-    display: flex;
-    justify-content: center;
-    width: 20%;
-}
-.menu4:hover{
-    background-color: rgb(244, 249, 244);
-}
-.menu5{
-    width: 20%;
-    display: flex;
-    justify-content: center;
-}
-.menu5:hover{
-    background-color: rgb(244, 249, 244);
-}
-
-
-/* letras*/
-h1{
-    color: rgb(92, 141, 137);
-    font-family: 'Ubuntu', sans-serif;
-    text-align: center;
-    font-size: 60px;
-}
-h2{
-    color: rgb(116, 180, 155);
-    font-family: 'Ubuntu', sans-serif;
-    font-size: 40px;
-}
-h3{
-    font-family: 'Ubuntu', sans-serif;
-    color: rgb(92, 141, 137);
- }
-h4{
-    font-family: 'Ubuntu', sans-serif;
-    color: rgb(92, 141, 137);
-}
-
-
-
-
-
-/* Estilo del main*/
-.contenedorMain {
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 50px 400px 50px;
-    grid-template-areas: "tituloMain  tituloMain  tituloMain  "
-                         "cajaMain    cajaMain    cajaMain    "
-                         "valoracion1 valoracion2 valoracion3  ";
-}
-.tituloMain{
-    grid-area: tituloMain;
-    display: flex;
-    justify-content: center;
-    font-size: 30px;
-}
-.cajaMain{
-    grid-area: cajaMain;
-    display: flex;
-    background-color: rgb(198, 198, 245);
-
-}
-.recomendacion{
-    height: 300px;
-    width: 100%;
-    padding-left: 2px;
-}
-.recomendacion .imagen img{
-    height: 300px;
-    width: 100%;
-}
-.recomendacion .valoracion{
-    display: flex;
-    justify-content: center;
-    font-size: 30px;
-}
-.contenedorCarrusel{
-    height:400px ;
-}
-.tamImg{
-    width: 100%;
-    height: 100%;
-}
-.img-thumbnail{
-    background-color: rgb(116, 180, 155); ;
-}
 /* estilo de la seccion historia*/
-.seccionHistoria{
-    width: 80%;
-}
-.seccionHistoria p{
-    font-family: 'Ubuntu', sans-serif;
-    color: rgb(92, 141, 137);  
-}
+.seccionHistoria {
+  width: 80%; }
 
-/*estilo del aside*/
-aside{
-    grid-area: aside;
-    width: 100%;
-    height: 400px;
-}
+.seccionHistoria p {
+  font-family: "Ubuntu", sans-serif;
+  color: #5c8d89; }
 
-.publicidad{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: center;
-}
-.publicidad img{
-    width: 100%;
-    height: 350px;
-}
+.publicidad {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center; }
 
+.publicidad-imagen {
+  width: 100%; }
 
-
-
-
+.publicidad img {
+  width: 100%;
+  height: 350px; }
 
 /*Estilo seccion locales*/
-.sucursales{
-    display: grid;
-    width: 100%;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 50px 300px;
-    grid-template-areas: "tituloSucursales tituloSucursales"
-                         "sucursal1        sucursal2";
-}
-.tituloSucursales{
-    grid-area: tituloSucursales;
-    width: 100%;
-    height: 50px;
-    display: flex;
-    font-size: 30px;
-    justify-content: center;
-}
-.sucursal1{
-    grid-area: sucursal1;
-    width: 100%;
-    height: 400px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.sucursal1 img{
-    width: 100%;
-    height: 350px;
-}
-.sucursal2{
-    grid-area: sucursal2;
-    width: 100%;
-    height: 400px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.sucursal2 img{
-    width: 100%;
-    height: 350px;
-}
-.horarios{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-}
-.horarios h3{
-font-size: 30px;    
-}
-.horarios h4{
-    font-size: 25px;
-}
+/* bloque sucursales */
+.sucursales {
+  width: auto;
+  height: 400px; }
+
+.sucursales-titulo {
+  border: solid 3px;
+  border-color: #5c8d89;
+  width: auto;
+  font-size: 40px;
+  align-items: center;
+  text-align: center;
+  display: block; }
+
+.sucursales-primera {
+  height: 350px;
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+.sucursales-primera-titulo {
+  width: 100%;
+  height: 10%;
+  text-align: center; }
+
+.sucursales-primera-img {
+  height: 90%; }
+
+.sucursales-primera-img img {
+  width: 100%;
+  height: 100%; }
+
+.sucursales-segunda {
+  height: 350px;
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+.sucursales-segunda-titulo {
+  width: 100%;
+  height: 10%;
+  text-align: center; }
+
+.sucursales-segunda-img {
+  height: 90%; }
+
+.sucursales-segunda-img img {
+  width: 100%;
+  height: 100%; }
+
+/* bloque horarios     */
+.horarios {
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center; }
+
+.horarios-titulo h3 {
+  font-size: 30px; }
+
+.horarios-dia h4, .horarios-noche h4 {
+  font-size: 25px; }
+
+/* bloque ubicaciones */
+.ubicaciones {
+  height: 500px;
+  display: flex;
+  flex-direction: column; }
+
+.ubicaciones-titulo {
+  height: 30%; }
+
+.ubicaciones-contenedor {
+  height: 70%; }
+
+.ubicaciones-primera {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; }
+
+.ubicaciones-primera-direccion {
+  height: 30%; }
+
+.ubicaciones-primera-mapa {
+  height: 70%; }
+
+.ubicaciones-primera-mapa img {
+  width: 100%;
+  height: 100%; }
+
+.ubicaciones-segunda {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; }
+
+.ubicaciones-segunda-direccion {
+  height: 30%; }
+
+.ubicaciones-segunda-mapa {
+  height: 70%; }
+
+.ubicaciones-segunda-mapa img {
+  width: 100%;
+  height: 100%; }
+
+/* bloque servicios */
+.servicios {
+  width: 100%;
+  height: 350px; }
+
+.servicios-titulo {
+  text-align: center;
+  height: 30%; }
+
+.servicios-contenedor {
+  width: 100%;
+  height: 70%; }
+
+.servicios-vigilancia {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%; }
+
+.servicios-vigilancia-img {
+  width: 100%;
+  height: 80%; }
+
+.servicios-vigilancia-img img {
+  width: 100%;
+  height: 100%; }
+
+.servicios-vigilancia-nombre {
+  width: 100%;
+  height: 20%;
+  text-align: center; }
+
+.servicios-estacionamiento {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%; }
+
+.servicios-estacionamiento-img {
+  width: 100%;
+  height: 80%; }
+
+.servicios-estacionamiento-img img {
+  width: 100%;
+  height: 100%; }
+
+.servicios-estacionamiento-nombre {
+  width: 100%;
+  height: 20%;
+  text-align: center; }
+
+.servicios-wifi {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%; }
+
+.servicios-wifi-img {
+  width: 100%;
+  height: 80%; }
+
+.servicios-wifi-img img {
+  width: 100%;
+  height: 100%; }
+
+.servicios-wifi-nombre {
+  width: 100%;
+  height: 20%;
+  text-align: center; }
+
+@media only screen and (max-width: 576px) {
+  .sucursales {
+    height: 1050px; }
+  .sucursales-primera {
+    width: 100%; }
+  .sucursales-segunda-img {
+    width: 100%; }
+  .ubicaciones {
+    height: auto; }
+  .servicios {
+    height: auto; } }
+
 /* Estilo seccion Reservas*/
-.formularioReserva{
-    background-color: rgb(167, 215, 197);
-    width: 100%;
-    height: 400px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-}
+.formularioReserva {
+  background-color: #a7d7c5;
+  width: 100%;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center; }
+
+.reserva-titulo {
+  text-align: center;
+  height: 50px; }
+
 /* Estilo seccion Contacto */
-.mainContacto{
-    background-color: rgb(167, 215, 197);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-}
-
 /* Estilo seccion Carta */
-.nav1{
-    width: 100%;
-    grid-area: menu;
-    height: 50px;
-}
-.elementoTabla{
-    background-color:rgb(244,249,244);
-    display: flex;
-    justify-content: center;
-    border: 1px solid rgb(92, 141, 137);
+.carta-titulo {
+  text-align: center; }
 
-}
-.elementoTabla h3{
-    text-align: center;
-}
-.filaVacia{
-    height: 40px;
-}
+.tabla-general-titulo h3 {
+  background-color: #f4f9f4;
+  display: flex;
+  justify-content: center;
+  border: 1px solid #5c8d89;
+  text-align: center;
+  font-size: 50px;
+  color: #5c8d89; }
+
+.tabla-general-elemento {
+  background-color: #f4f9f4;
+  display: flex;
+  justify-content: center;
+  border: 1px solid #5c8d89;
+  text-align: center;
+  font-size: 30px;
+  color: #74b49b; }
+
+.contenedor-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; }
 
 /*Estilo de la lista*/
-ul{
-    background-color: white;
-    
-}
-li{
-    font-size: 20px;
-}
+ul {
+  background-color: white; }
 
-
-
-
-
-
-
-
+li {
+  font-size: 20px; }

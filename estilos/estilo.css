@@ -297,18 +297,6 @@ footer {
   height: 20%;
   text-align: center; }
 
-@media only screen and (max-width: 576px) {
-  .sucursales {
-    height: 1050px; }
-  .sucursales-primera {
-    width: 100%; }
-  .sucursales-segunda-img {
-    width: 100%; }
-  .ubicaciones {
-    height: auto; }
-  .servicios {
-    height: auto; } }
-
 /* Estilo seccion Reservas*/
 .formularioReserva {
   background-color: #a7d7c5;
@@ -357,3 +345,16 @@ ul {
 
 li {
   font-size: 20px; }
+
+/* queries de la seccion locales */
+@media only screen and (max-width: 576px) {
+  .sucursales {
+    height: 1050px; }
+  .sucursales-primera {
+    width: 100%; }
+  .sucursales-segunda-img {
+    width: 100%; }
+  .ubicaciones {
+    height: auto; }
+  .servicios {
+    height: auto; } }

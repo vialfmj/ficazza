@@ -21,16 +21,16 @@
     color: $color1;  
 }
 
-.publicidad{
+.promo{
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
 }
-.publicidad-imagen{
+.promo-imagen{
     width: 100%;
 }
-.publicidad img{
+.promo img{
     width: 100%;
     height: 350px;
 }

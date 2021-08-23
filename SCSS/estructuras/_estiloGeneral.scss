@@ -49,5 +49,13 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-
+  overflow: hidden;
+  background-color: $color4;
+	box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+	transition: all 400ms ease-out;
+	cursor: default;
+}
+.menu-item:hover{
+	box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
+	transform: translateY(-3%);
 }

@@ -7,6 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="En esta seccion podes ver los productos que ofrecemos">
     <meta name="keywords" content="restaurante comida carta">
+<!-- link favicon -->
+    <link rel="shortcut icon" href="../imagenes/logo.jpg" type="image/x-icon">
+
 <!-- Link bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
@@ -25,7 +28,7 @@
 </head>
 <body>
     <header>
-                <!--     encabezado -->
+                <!--encabezado -->
                 <div class="row">
                     <div class="col-2 logo">
                         <img src="../imagenes/logo.jpg" alt="">
@@ -39,7 +42,7 @@
                         <h2>Explorando Sabores...</h2>
                     </div>
                 </div>
-                <!--         menu -->
+                <!--menu -->
                 <div class="container">
                     <div class="row menu">
                         <div class="col-sm-2 menu-item">
@@ -63,35 +66,66 @@
     </header>      
     <!-- inicio del main-->
        <main>
-
-           <div class="container-fluid carta-titulo" >
-               <h2>Seccion Carta</h2>
-           </div>
-           <div class="dropdown">
-            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-              Que buscas?
-            </button>
-            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-              <li><a class="dropdown-item" href="#Carnes">Carnes</a></li>
-              <li><a class="dropdown-item" href="#Pastas">Pastas</a></li>
-              <li><a class="dropdown-item" href="#Ensaladas">Ensaladas</a></li>
-            </ul>
+        <div class="row container-fluid carta-encabezado">
+          <div class="col-sm-5 carta-titulo" >
+            <h2>Seccion Carta</h2>
           </div>
+          <div class="col-sm-3 carta-indice">
+            <div class="dropdown">
+              <button class="btn boton dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                Que buscas?
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <li><a class="dropdown-item" href="#Carnes">Carnes</a></li>
+                <li><a class="dropdown-item" href="#Pastas">Pastas</a></li>
+                <li><a class="dropdown-item" href="#Ensaladas">Ensaladas</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        
         <div id="Carnes" class="container tabla-carnes">
             <div class="row tabla-general-titulo">
                 <h3>Carnes</h3>
             </div>
-            <div class="row row-cols-3">
-              <div class="col-12 col-md-4 tabla-general-elemento"><p>Plato1</p></div>
-              <div class="col-12 col-md-4 tabla-general-elemento"><p>Descripcion1</p></div>
-              <div class="col-12 col-md-4 tabla-general-elemento"><p>$X</p></div>
-              <div class="col-12 col-md-4 tabla-general-elemento"><p>Plato2</p></div>
-              <div class="col-12 col-md-4 tabla-general-elemento"><p>Descripcion2</p></div>
-              <div class="col-12 col-md-4 tabla-general-elemento"><p>$X</p></div>
-              <div class="col-12 col-md-4 tabla-general-elemento"><p>Plato3</p></div>
-              <div class="col-12 col-md-4 tabla-general-elemento"><p>Descripcion3</p></div>
-              <div class="col-12 col-md-4 tabla-general-elemento"><p>$X</p></div>
-            </div>
+            <div class="row row-cols-1 row-cols-md-2 g-4">
+                <div class="col">
+                  <div class="card">
+                    <img src="../imagenes/imagenesCarta/Carnes/platoCarneUno-min.jpg" class="card-img-top" alt="Un corte de carne con hojas en un plato blanco">
+                    <div class="card-body">
+                      <h5 class="card-title">Carne a la española</h5>
+                      <p class="card-text">Un corte de carne en una salsa especial.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card">
+                    <img src="../imagenes/imagenesCarta/Carnes/platoCarneDos-min.jpg" class="card-img-top" alt="Plato blanco con carne y verduras">
+                    <div class="card-body">
+                      <h5 class="card-title">Carne a lo estadounidense</h5>
+                      <p class="card-text">Un corte de carne con verduras cocinadas.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card">
+                    <img src="../imagenes/imagenesCarta/Carnes/platoCarneTres-min.jpg" class="card-img-top" alt="Carne servida en un plato con verduras y una copa de vino en el fondo.">
+                    <div class="card-body">
+                      <h5 class="card-title">Carne a la francesa</h5>
+                      <p class="card-text">Carne con tomate y esparragos en salsa.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card">
+                    <img src="../imagenes/imagenesCarta/Carnes/platoCarneCuatro-min.jpg" class="card-img-top" alt="plato de carne en salsa con papas a un lado">
+                    <div class="card-body">
+                      <h5 class="card-title">Carne a la inglesa</h5>
+                      <p class="card-text">Carne cocinada en olla con papas.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
             <div class="row  tabla-general-vacio"></div>
           </div>
 
@@ -99,17 +133,44 @@
             <div class="row tabla-general-titulo">
                 <h3>Pastas</h3>
             </div>
-            <div class="row row-cols-3">
-                <div class="col-12 col-md-4 tabla-general-elemento"><p>Plato1</p></div>
-                <div class="col-12 col-md-4 tabla-general-elemento"><p>Descripcion1</p></div>
-                <div class="col-12 col-md-4 tabla-general-elemento"><p>$X</p></div>
-                <div class="col-12 col-md-4 tabla-general-elemento"><p>Plato2</p></div>
-                <div class="col-12 col-md-4 tabla-general-elemento"><p>Descripcion2</p></div>
-                <div class="col-12 col-md-4 tabla-general-elemento"><p>$X</p></div>
-                <div class="col-12 col-md-4 tabla-general-elemento"><p>Plato3</p></div>
-                <div class="col-12 col-md-4 tabla-general-elemento"><p>Descripcion3</p></div>
-                <div class="col-12 col-md-4 tabla-general-elemento"><p>$X</p></div>
-            </div>
+            <div class="row row-cols-1 row-cols-md-2 g-4">
+                <div class="col">
+                  <div class="card">
+                    <img src="../imagenes/imagenesCarta/Pastas/platoPastasUno-min.jpg" class="card-img-top" alt="plato de spaggetis en salsa roja">
+                    <div class="card-body">
+                      <h5 class="card-title">Spaggetti</h5>
+                      <p class="card-text">Plato de spagettis en salsa bolognesa.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card">
+                    <img src="../imagenes/imagenesCarta/Pastas/platoPastasDos-min.jpg" class="card-img-top" alt="plato de sorrentinos">
+                    <div class="card-body">
+                      <h5 class="card-title">Sorrentinos</h5>
+                      <p class="card-text">Sorrentinos en salsa con relleno a eleccion.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card">
+                    <img src="../imagenes/imagenesCarta/Pastas/platoPastasTres-min.jpg" class="card-img-top" alt="Plato de lasagna">
+                    <div class="card-body">
+                      <h5 class="card-title">Lasagna</h5>
+                      <p class="card-text">Una porcion de lasagna con salsa a eleccion.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card">
+                    <img src="../imagenes/imagenesCarta/Pastas/platoPastasCuatro-min.jpg" class="card-img-top" alt="Plato de ñoquis">
+                    <div class="card-body">
+                      <h5 class="card-title">Ñoquis</h5>
+                      <p class="card-text">Ñoquis de papa con salsa a eleccion</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
             <div class="row  tabla-general-vacio"></div>
           </div>
 
@@ -117,17 +178,44 @@
             <div class="row tabla-general-titulo">
                 <h3>Ensaladas</h3>
             </div>
-            <div class="row row-cols-3">
-                <div class="col-12 col-md-4 tabla-general-elemento"><p>Plato1</p></div>
-                <div class="col-12 col-md-4 tabla-general-elemento"><p>Descripcion1</p></div>
-                <div class="col-12 col-md-4 tabla-general-elemento"><p>$X</p></div>
-                <div class="col-12 col-md-4 tabla-general-elemento"><p>Plato2</p></div>
-                <div class="col-12 col-md-4 tabla-general-elemento"><p>Descripcion2</p></div>
-                <div class="col-12 col-md-4 tabla-general-elemento"><p>$X</p></div>
-                <div class="col-12 col-md-4 tabla-general-elemento"><p>Plato3</p></div>
-                <div class="col-12 col-md-4 tabla-general-elemento"><p>Descripcion3</p></div>
-                <div class="col-12 col-md-4 tabla-general-elemento"><p>$X</p></div>
-            </div>
+            <div class="row row-cols-1 row-cols-md-2 g-4">
+                <div class="col">
+                  <div class="card">
+                    <img src="../imagenes/imagenesCarta/Ensaladas/platoEnsaladaUno.png" class="card-img-top" alt="foto de una ensalada">
+                    <div class="card-body">
+                      <h5 class="card-title">Ensalada verde</h5>
+                      <p class="card-text">Ensalada de hojas variadas y manzana verde. </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card">
+                    <img src="../imagenes/imagenesCarta/Ensaladas/platoEnsaladaDos-min.jpg" class="card-img-top" alt="foto de una ensalada">
+                    <div class="card-body">
+                      <h5 class="card-title">Ensalada griega</h5>
+                      <p class="card-text">Una ensalada con queso cebolla morada y semillas de granada</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card">
+                    <img src="../imagenes/imagenesCarta/Ensaladas/platoEnsaladaTres-min.jpg" class="card-img-top" alt="foto de un plato de ensalada">
+                    <div class="card-body">
+                      <h5 class="card-title">Ensalada Capresse</h5>
+                      <p class="card-text">Ensalada de verdes con tomate, huevo, queso y aceitunas negras</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card">
+                    <img src="../imagenes/imagenesCarta/Ensaladas/platoEnsaladaCuatro-min.jpg" class="card-img-top" alt="foto de un plato de ensalada">
+                    <div class="card-body">
+                      <h5 class="card-title">Ensalada de Cangrejo</h5>
+                      <p class="card-text">Ensalada con trozos de crustaceo </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
             <div class="row  tabla-general-vacio"></div>
             </div>
           </div>

@@ -8,6 +8,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Este es el sitio web de nuestro restaurante donde podes conocernos hacer reservas contactarnos y ver nuestra carta">
     <meta name="keywords" content="restaurante comida reservas">
+    <!-- link favicon -->
+    <link rel="shortcut icon" href="./imagenes/logo.jpg" type="image/x-icon">
     <!-- Link bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
@@ -27,10 +29,10 @@
 <body>
 
     <header>
-        <!--     encabezado -->
+    <!--encabezado -->
         <div class="row">
             <div class="col-2 logo">
-                <img src="./imagenes/logo.jpg" alt="">
+                <img src="./imagenes/logo.jpg" alt="logo de la empresa-sombrero con cubiertos a los lados">
             </div>
             <div class="col-8 titulo">
                 <h1>Ficcaza</h1>
@@ -41,7 +43,7 @@
                 <h2>Explorando Sabores...</h2>
             </div>
         </div>
-        <!--         menu -->
+    <!--menu -->
         <div class="container">
             <div class="row menu">
                 <div class="col-sm-2 menu-item">
@@ -61,11 +63,12 @@
                 </div>
             </div>
         </div>
-
-
     </header>
     <!-- inicio del main -->
     <main>
+        <div class="row col-sm-8">
+            <h2>Conoce nuestros mejores platos...</h2>
+        </div>
         <div class="row">
             <div class="col-sm-8  ">
                 <div id="carouselExampleCaptions" class="carousel slide " data-bs-ride="carousel">
@@ -79,21 +82,21 @@
                     </div>
                     <div class="carousel-inner ">
                         <div class="carousel-item active carrusel-contenedor ">
-                            <img src="imagenes/plato1.jpg" class="d-block w-100 img-thumbnail tamImg" alt="...">
+                            <img src="imagenes/plato1.jpg" class="d-block w-100 img-thumbnail tamImg" alt="plato de carne con verduras y copas de vino de fondo">
                             <div class="carousel-caption d-none d-md-block">
                                 <h5>Plato 1</h5>
-                                <p>Nuestro plato estrella por ser el mejor valorado por los clientes</p>
+                                <p >Nuestro plato estrella por ser el mejor valorado por los clientes</p>
                             </div>
                         </div>
                         <div class="carousel-item carrusel-contenedor">
-                            <img src="imagenes/plato2.jpg" class="d-block w-100 img-thumbnail tamImg" alt="...">
+                            <img src="imagenes/plato2.jpg" class="d-block w-100 img-thumbnail tamImg" alt="plato de fideos con salsa roja y hojas verdes">
                             <div class="carousel-caption d-none d-md-block">
                                 <h5>Plato 2</h5>
                                 <p>El segundo mejor plato de nosotros pero tambien el mas pedido</p>
                             </div>
                         </div>
                         <div class="carousel-item carrusel-contenedor">
-                            <img src="imagenes/plato3.png" class="d-block w-100 img-thumbnail tamImg" alt="...">
+                            <img src="imagenes/plato3.png" class="d-block w-100 img-thumbnail tamImg" alt="plato de ensalada">
                             <div class="carousel-caption d-none d-md-block">
                                 <h5>Plato 3</h5>
                                 <p>Este plato es nuestra primera recomendacion para los nuevos clientes</p>
@@ -113,48 +116,42 @@
                 </div>
             </div>
 
-            <!--Inicio bloque publicidad-->
-
+    <!--Inicio bloque publicidad-->
             <div class="col-sm-4 promo">
                 <div class="promo-imagen">
-                    <img src="imagenes/promo.png" alt="">
+                    <img src="imagenes/promo.png" alt="imagen con graficos de tabla y torta">
                 </div>
                 <a href="#">click aqui para ganar millones</a>
             </div>
-
         </div>
     </main>
     <!--fin del main-->
     <!-- inicio de la seccion historia-->
     <section>
         <div class="seccionHistoria">
-            <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#demo">
+            <button type="button" class="btn boton" data-toggle="collapse" data-target="#demo">
                 De donde venimos? </button>
             <div id="demo" class="collapse">
                 <p>
-                    Nuestro restaurante fue fundado... Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste
-                    voluptates harum sunt expedita officiis odio impedit recusandae eius, vitae nemo fugit dignissimos
-                    tempore accusamus eos repudiandae possimus quae voluptatibus aspernatur.
+                    Nuestro restaurante fue fundado en el año 1957, por Jose Gonzalez, quien decidio poner en practica lo que habia aprendido en sus viajes por el mundo 
+                    y compartir los sabores que habia descubierto (de aqui nuestra frase "Explorando sabores"). Desde su fundacion el restaurante ha ido creciendo 
+                    hasta convertirse en lo que es actualmente, uno de los mejores. 
                 </p>
             </div>
 
         </div>
     </section>
-
-
-
-
     <!--inicio del footer-->
     <footer>
         <!-- Redes Sociales -->
         <h4>Nuestras redes sociales</h4>
-        <div class="red1"><a href="#"></a>Facebook</div>
-        <div class="red2"><a href="#"></a>Twitter</div>
-        <div class="red3"><a href="#"></a>Instagram</div>
+        <div class="red1"><a href="#">Facebook</a></div>
+        <div class="red2"><a href="#">Twitter</a></div>
+        <div class="red3"><a href="#">Instagram</a></div>
     </footer>
     <!--fin del footer-->
 
-    <!--     scripts de bootstrap -->
+    <!--scripts de bootstrap -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
         crossorigin="anonymous"></script>

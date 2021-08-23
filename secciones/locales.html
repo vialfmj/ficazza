@@ -1,33 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!--     etiquetas meta -->
+<!--etiquetas meta -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="En esta pagina del sitio podes conocer sobre nuestras sucursales y lo que ofrecen">
     <meta name="keywords" content="restaurante comida locales">
+<!-- titulo -->
     <title>Locales</title>
-        <!-- Link bootstrap-->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+<!-- link favicon -->
+    <link rel="shortcut icon" href="../imagenes/logo.jpg" type="image/x-icon">
+
+<!-- Link bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
-        <!-- Link de la tipografia -->
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital@1&display=swap" rel="stylesheet">
-        <!-- Etiquetas de linkeo a Css propio -->
-        <link rel="stylesheet"  href="../estilos/estilo.css">
-        <!-- <link rel="stylesheet" href="../CSS/pruebacss.css"> -->
+<!-- Link de la tipografia -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital@1&display=swap" rel="stylesheet">
+<!-- Etiquetas de linkeo a Css propio -->
+    <link rel="stylesheet"  href="../estilos/estilo.css">
     
 </head>
 <body>
     <header>
-        <!--     encabezado -->
+<!--encabezado -->
         <div class="row">
             <div class="col-2 logo">
-                <img src="../imagenes/logo.jpg" alt="">
+                <img src="../imagenes/logo.jpg" alt="logo de la empresa">
             </div>
             <div class="col-8 titulo">
                 <h1>Ficcaza</h1>
@@ -38,7 +41,7 @@
                 <h2>Explorando Sabores...</h2>
             </div>
         </div>
-        <!--         menu -->
+<!--menu -->
         <div class="container">
             <div class="row menu">
                 <div class="col-sm-2 menu-item">
@@ -58,45 +61,38 @@
                 </div>
             </div>
         </div>
-
-
     </header>
 <!--inicio del main-->
-<main>
-    
-    <div class="row col-sm-8 sucursales-titulo">
-        <div class="col-sm-12">
-            <h3>NUESTRAS SUCURSALES</h3>
-        </div>
-    </div>
-    <div class="row sucursales">
-        <div class="col-sm-4 sucursales-primera">
-            <div class="sucursales-primera-titulo">
-                <h3>Primer sucursal</h3>
-            </div>
-            
-            <div class="col-sm-12 sucursales-primera-img">
-                <img src="../imagenes/sucursal1.jpg" alt="">
+    <main>
+        <div class="row col-sm-8 sucursales-titulo">
+            <div class="col-sm-12">
+                <h3>NUESTRAS SUCURSALES</h3>
             </div>
         </div>
-        <div class="col-sm-4 sucursales-segunda">
-            <div class="sucursales-segunda-titulo">
-                <h3>Segunda sucursal</h3>
+        <div class="row sucursales">
+            <div class="col-sm-4 sucursales-primera">
+                <div class="sucursales-primera-titulo">
+                    <h3>Primer sucursal</h3>
+                </div>
+                <div class="col-sm-12 sucursales-primera-img">
+                    <img src="../imagenes/sucursal1.jpg" alt="">
+                </div>
             </div>
-            <div class="col-sm-12 sucursales-segunda-img">
-                <img src="../imagenes/sucursal2.jpg" alt="">
+            <div class="col-sm-4 sucursales-segunda">
+                <div class="sucursales-segunda-titulo">
+                    <h3>Segunda sucursal</h3>
+                </div>
+                <div class="col-sm-12 sucursales-segunda-img">
+                    <img src="../imagenes/sucursal2.jpg" alt="">
+                </div>
+            </div>
+            <div class="col-sm-4 horarios ">
+                <div class="horarios-titulo"><h3>HORARIOS</h3></div>
+                <div class="horarios-dia"><h4>11:30 a 15:30 </h4></div>
+                <div class="horarios-noche"><h4>20:00 a 24:00 </h4></div>
             </div>
         </div>
-        <div class="col-sm-4 horarios ">
-            <div class="horarios-titulo"><h3>HORARIOS</h3></div>
-            <div class="horarios-dia"><h4>11:30 a 15:30 </h4></div>
-            <div class="horarios-noche"><h4>20:00 a 24:00 </h4></div>
-        </div>
-    </div>
-
-
-
-</main>
+    </main>
 <!--fin del main-->
 <!-- inicio seccion servicios -->
 <section>
@@ -105,77 +101,71 @@
             <h2>Nuestros locales ofrecen servicios de:</h2>
         </div>
         <div class="row servicios-contenedor">
-            <div class="col-sm-4 servicios-vigilancia">
+            <div class="col-8 col-sm-4 servicios-vigilancia">
                 <div class="servicios-vigilancia-img">
-                    <img src="../imagenes/vigilancia.png" alt="">
+                    <img src="../imagenes/vigilancia.png" alt="imagen representativa de vigilancia">
                 </div>
                 <div class="servicios-vigilancia-nombre">
                     <h3>Vigilancia</h3>
                 </div>
             </div>
-            <div class="col-sm-4 servicios-estacionamiento">
+            <div class="col-8 col-sm-4 servicios-estacionamiento">
                 <div class="servicios-estacionamiento-img">
-                    <img src="../imagenes/estacionamiento.jpg" alt="">
+                    <img src="../imagenes/estacionamiento.jpg" alt="imagen representativa de estacionamiento">
                 </div>
                 <div class="servicios-estacionamiento-nombre">
                     <h3>Estacionamiento</h3>
                 </div>
             </div>
-            <div class="col-sm-4 servicios-wifi">
+            <div class="col-8 col-sm-4 servicios-wifi">
                 <div class="servicios-wifi-img">
-                    <img src="../imagenes/wifi.jpg" alt="">
+                    <img src="../imagenes/wifi.jpg" alt="imagen representativa de wifi">
                 </div>
                 <div class="servicios-estacionamiento-nombre">
                     <h3>Wi-Fi</h3>
                 </div>
             </div>
-    
         </div>
      </div>
 </section>
 <!-- seccion ubicaciones -->
 <section>
-<div class="container-fluid ubicaciones ">
-    <div class="row ubicaciones-titulo ">
-        <div class="col-sm-8 ">
-            <h2>Visitanos en nuestras sucursales ubicadas en:</h2>
+    <div class="container-fluid ubicaciones ">
+        <div class="row ubicaciones-titulo ">
+            <div class="col-sm-8 ">
+                <h2>Visitanos en nuestras sucursales ubicadas en:</h2>
+            </div>
+        </div>
+        <div class="row col-sm-8 ubicaciones-contenedor">
+            <div class="col-6 ubicaciones-primera">
+                <div class="ubicaciones-primera-direccion">
+                    <h2>Espejo 352</h2>
+                </div>
+                <div class="ubicaciones-primera-mapa">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3350.3202972148306!2d-68.84669928523697!3d-32.88969882633679!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x967e091b1b1996f5%3A0xcfa3c0b58f7e7c1!2sCentro%2C%20Capital%2C%20Mendoza!5e0!3m2!1ses-419!2sar!4v1629140182728!5m2!1ses-419!2sar" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+            <div class="col-6 ubicaciones-segunda">
+                <div class="ubicaciones-segunda-direccion">
+                    <h2>Pelegrini 441</h2>
+                </div>
+                <div class="ubicaciones-segunda-mapa">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3350.926229532342!2d-68.84499798338504!3d-32.87367120907595!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x967e09371e05753d%3A0xbc8d7485c5764b57!2sParque%20Central!5e0!3m2!1ses-419!2sar!4v1629142886536!5m2!1ses-419!2sar" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
         </div>
     </div>
-    <div class="row ubicaciones-contenedor">
-        <div class="col-6 ubicaciones-primera">
-            <div class="ubicaciones-primera-direccion">
-                <h2>CALLE A 123</h2>
-            </div>
-            <div class="ubicaciones-primera-mapa">
-                <a href="#"> <img src="../imagenes/mapa.jpg" alt=""></a>
-            </div>
-        </div>
-        <div class="col-6 ubicaciones-segunda">
-            <div class="ubicaciones-segunda-direccion">
-                <h2>CALLE B 456</h2>
-            </div>
-            <div class="ubicaciones-segunda-mapa">
-                <a href="#"> <img src="../imagenes/mapa.jpg" alt=""></a>
-            </div>
-        </div>
-    </div>
-</div>
 </section>
+<!-- inicio del footer -->
 <footer>
-    <!-- Redes Sociales -->
+<!-- Redes Sociales -->
     <h4>Nuestras redes sociales</h4>
-    <div class="red1"><a href="#"></a>Facebook</div>
-    <div class="red2"><a href="#"></a>Twitter</div>
-    <div class="red3"><a href="#"></a>Instagram</div>
+    <div class="red1"><a href="#">Facebook</a></div>
+    <div class="red2"><a href="#">Twitter</a></div>
+    <div class="red3"><a href="#">Instagram</a></div>
 </footer>
-
-
-
-
-
 <!--fin del footer-->
-
-   <!--     scripts de bootstrap -->
+<!--scripts de bootstrap -->
    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
    crossorigin="anonymous"></script>

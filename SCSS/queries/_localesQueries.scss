@@ -4,16 +4,25 @@
     .sucursales{
         height: 1050px ;
     }
-    .sucursales-primera{
-        width: 100%;
+    .sucursales-primera-img{
+        margin: 20px;
     }
     .sucursales-segunda-img{
-        width: 100%;
+        margin: 20px;
     }
     .ubicaciones{
         height: auto;
     }
+    .ubicaciones-contenedor{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
     .servicios{
         height: auto;
+    }
+    .servicios-contenedor{
+        display: flex;
+        justify-content: center;
     }
 }

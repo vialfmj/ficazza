@@ -3,7 +3,7 @@
   margin: 0px;
   padding: 0px; }
 
-.padding-bloque, .carta-titulo, .tabla-carnes, .tabla-pastas, .tabla-ensaladas {
+.padding-bloque, .carta-titulo {
   padding-top: 40px;
   padding-bottom: 40px; }
 
@@ -34,6 +34,11 @@ a {
   font-size: 20px;
   text-align: end;
   color: #5c8d89; }
+
+.boton {
+  background-color: #5c8d89;
+  border-color: #74b49b;
+  color: #f4f9f4; }
 
 /* Estilo general de todas las paginas */
 body {
@@ -79,7 +84,16 @@ footer {
 .menu-item {
   display: flex;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  overflow: hidden;
+  background-color: #f4f9f4;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+  transition: all 400ms ease-out;
+  cursor: default; }
+
+.menu-item:hover {
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+  transform: translateY(-3%); }
 
 /* Estilo del index */
 .carrusel-contenedor {
@@ -311,50 +325,81 @@ footer {
   text-align: center;
   height: 50px; }
 
+.reserva-formulario-contenedor {
+  border: solid 1px #5c8d89; }
+
 /* Estilo seccion Contacto */
-/* Estilo seccion Carta */
-.carta-titulo {
+.contacto-titulo {
   text-align: center; }
 
-.tabla-general-titulo h3 {
-  background-color: #f4f9f4;
-  display: flex;
-  justify-content: center;
-  border: 1px solid #5c8d89;
-  text-align: center;
-  font-size: 50px;
-  color: #5c8d89; }
+.contacto-contenedor {
+  border: 1px solid #5c8d89; }
 
-.tabla-general-elemento {
-  background-color: #f4f9f4;
+/* Estilo seccion Carta */
+.carta-encabezado {
+  display: flex;
+  justify-content: flex-end; }
+
+.carta-titulo {
+  text-align: center; }
+  .carta-titulo h2 {
+    font-size: 55px; }
+
+.tabla-general-titulo {
+  background-color: #a7d7c5;
   display: flex;
   justify-content: center;
   border: 1px solid #5c8d89;
+  border-radius: 6px;
   text-align: center;
-  font-size: 30px;
-  color: #74b49b; }
+  font-size: 50px; }
+  .tabla-general-titulo h3 {
+    color: #f4f9f4; }
 
 .contenedor-main {
   display: flex;
   flex-direction: column;
   justify-content: space-between; }
 
-/*Estilo de la lista*/
-ul {
-  background-color: white; }
+.card {
+  border: 1px solid #74b49b;
+  margin: 20px;
+  border-radius: 6px;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+  transition: all 400ms ease-out;
+  cursor: default; }
+  .card img {
+    height: 250px; }
 
-li {
-  font-size: 20px; }
+.card:hover {
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+  transform: translateY(-3%); }
+
+.card-body {
+  height: 100px; }
 
 /* queries de la seccion locales */
 @media only screen and (max-width: 576px) {
   .sucursales {
     height: 1050px; }
-  .sucursales-primera {
-    width: 100%; }
+  .sucursales-primera-img {
+    margin: 20px; }
   .sucursales-segunda-img {
-    width: 100%; }
+    margin: 20px; }
   .ubicaciones {
     height: auto; }
+  .ubicaciones-contenedor {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
   .servicios {
-    height: auto; } }
+    height: auto; }
+  .servicios-contenedor {
+    display: flex;
+    justify-content: center; } }
+
+@media only screen and (max-width: 576px) {
+  .reserva-titulo {
+    padding-bottom: 90px; } }

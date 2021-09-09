@@ -149,6 +149,5 @@ function pedirDatos(){
            let formulario = e.target
            pedirDatos();
        }
-       /* problemas con el usuario de github */
        
       

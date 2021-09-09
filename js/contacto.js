@@ -11,7 +11,7 @@ class Comentario {
 }
 const guardarLocal = (clave, valor) => { localStorage.setItem(clave, valor) };
 function mostrarComentarios(){
-    let guardados= JSON.parse(localStorage.getItem("listaComentarios"));
+    let guardados= JSON.parse(localStorage.getItem("listaComentarios"));/* esto no funciona */
     let comentarios= [];
     for (const objeto of guardados){
             comentarios.push(new Comentario(objeto));
@@ -29,7 +29,7 @@ $(document).ready(()=> {
         let nombre= $('#contacto-nombre').val();
         let email= $('#contacto-email').val();
         let mensaje= $('#contacto-comentario').val();
-        console.log("hola");
+        console.log("no"); /* no lo muestra por consola */
         comentarios.push(new Comentario(nombre, email, mensaje));
         guardarLocal("listaComentarios", JSON.stringify(comentarios));
         mostrarComentarios();

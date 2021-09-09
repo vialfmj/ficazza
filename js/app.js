@@ -2,6 +2,8 @@
 let semana = [true, false, true, true, true, true, true];
 let semanaJSON=JSON.stringify(semana);
 localStorage.setItem(("semana1"), semanaJSON);
+let bandera=false;
+
 class Reserva {
     constructor(nombre, email,sucursal, cantidad, dia){
         this.nombre= nombre;
@@ -9,6 +11,7 @@ class Reserva {
         this.sucursal= sucursal;  
         this.cantidad=cantidad;  
         this.dia= dia;
+        
     }
 
 }
@@ -61,17 +64,11 @@ function consultarDisponibilidad(dia){
             break;
     }
 }
-function cargarDatos(nombre, email, sucursal, cantidad, dia){
-    let reserva1 = new Reserva(nombre, email, sucursal, cantidad, dia);
-    guardarDatos(reserva1);
-}
-function guardarDatos(reserva){
-    reservaJSON=JSON.stringify(reserva);
-    localStorage.setItem(("reserva1"), reservaJSON);
-}
 function mostrarDatos(){
     let reservaGuardada= JSON.parse(localStorage.getItem("reserva1"));
     let posicion= document.getElementById("reservas-hechas");
+    console.log(posicion);    
+    console.log("creando el div")
     let reserva = document.createElement("div");
     reserva.setAttribute("id", "reserva");
     let separacion= document.createElement("p");
@@ -112,24 +109,45 @@ function mostrarDatos(){
     reserva.appendChild(dia);
     posicion.appendChild(reserva);
 
+}
+function cargarDatos(nombre, email, sucursal, cantidad, dia){
+    let reserva1 = new Reserva(nombre, email, sucursal, cantidad, dia);
+    guardarDatos(reserva1);
+}
+function guardarDatos(reserva){
+    reservaJSON=JSON.stringify(reserva);
+    localStorage.setItem("reserva1", reservaJSON);
 
 }
+
 function pedirDatos(){
+
     let nombre= document.getElementById("reserva-nombre").value;
     let email= document.getElementById("reserva-email").value;
     let sucursal=document.getElementById("reserva-sucursal").value;
     let cantidad=document.getElementById("reserva-cantidad").value;
     let dia= document.getElementById("reserva-dia").value;
     let confirmacion=confirm("Se guardaran los datos. Esta todo correcto?");
-    if (confirmacion == true){
-        let d = consultarDisponibilidad(dia);
-        if(d== true){
-            cargarDatos(nombre, email, sucursal, cantidad, dia);
+    if(confirmacion == true){
+        cargarDatos(nombre, email, sucursal, cantidad, dia);
+        let d=consultarDisponibilidad(dia);
+        if(d==true){
+            alert("su reserva ha sido guardada")
             mostrarDatos();
         }
-        else
-        alert("ese dia no esta disponible, intente nuevamente");
-       }
-    
+        else{
+            alert("ese dia no esta disponible")
+        }     
     }
-
+       
+    }
+       let miFormulario      = document.getElementById("reserva-formulario");
+       miFormulario.addEventListener("submit", empezar)
+       
+       function empezar(e){
+           e.preventDefault();
+           let formulario = e.target
+           pedirDatos();
+       }
+       
+      

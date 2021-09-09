@@ -407,3 +407,7 @@ footer {
 @media only screen and (max-width: 576px) {
   .reserva-titulo {
     padding-bottom: 90px; } }
+
+  #reservas-hechas{
+    height: auto;
+  }

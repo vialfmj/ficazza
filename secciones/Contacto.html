@@ -71,26 +71,27 @@
     </div>
 <!--bloque de formulario -->
     <div class="container-fluid col-sm-8 contacto-contenedor">
-        <form>
+        <form id="contacto-formulario">
             <div class="mb-3">
               <label for="nombre" class="form-label">Nombre</label>
-              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-              <div id="emailHelp" class="form-text">No compartiremos esta informacion con nadie mas</div>
+              <input type="text" class="form-control" id="contacto-nombre" aria-describedby="emailHelp">
+              <div id="contacto-nombre" class="form-text">No compartiremos esta informacion con nadie mas</div>
             </div>
             <div class="mb-3">
                 <label for="exampleInputEmail1" class="form-label">Email</label>
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                <div id="emailHelp" class="form-text">ejemplo@email.com</div>
+                <input type="text" class="form-control" id="contacto-email" aria-describedby="emailHelp">
+                <div class="form-text">ejemplo@email.com</div>
               </div>
             <div class="input-group">
-                <span class="input-group-text">Dejanos tu comentario aqui</span>
-                <textarea class="form-control" aria-label="With textarea"></textarea>
+                <label for="comentario" class="form-label">Comentario</label>
+                <input type="text" class="form-control" id="contacto-comentario" aria-describedby="emailHelp">
             </div>
             <div class="mb-3 form-check">
+                
               <input type="checkbox" class="form-check-input" id="exampleCheck1">
               <label class="form-check-label" for="exampleCheck1">Captcha</label>
             </div>
-            <button type="Enviar" class="btn boton">Enviar</button>
+            <button id="contacto-boton-enviar" type="submit" class="btn boton">Enviar</button>
           </form>
 
     </div>
@@ -114,6 +115,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
         integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
         crossorigin="anonymous"></script>
-
+<!-- script propio -->
+<script src="../js/contacto.js"></script>
 </body>
 </html>

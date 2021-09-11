@@ -13,19 +13,16 @@ const guardarLocal = (clave, valor) => { localStorage.setItem(clave, valor) };
 function mostrarComentarios(){
     let guardados= JSON.parse(localStorage.getItem("listaComentarios"));/* esto no funciona */
     let comentarios= [];
+
+
     for (const objeto of guardados){
             comentarios.push(new Comentario(objeto));
     }
-    for (const comentario of comentarios){
-        console.log(comentarios);
-    }
+    console.log(comentarios);
      
 }
-function obtenerComentario(){
+    $("#contacto-boton-enviar").on('click', function () {
 
-}
-$(document).ready(()=> {
-    $("#contacto-formulario").submit(function(){
         let nombre= $('#contacto-nombre').val();
         let email= $('#contacto-email').val();
         let mensaje= $('#contacto-comentario').val();
@@ -34,4 +31,3 @@ $(document).ready(()=> {
         guardarLocal("listaComentarios", JSON.stringify(comentarios));
         mostrarComentarios();
     })
-})

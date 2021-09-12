@@ -11,22 +11,23 @@ class Comentario {
 }
 const guardarLocal = (clave, valor) => { localStorage.setItem(clave, valor) };
 function mostrarComentarios(){
-    let guardados= JSON.parse(localStorage.getItem("listaComentarios"));/* esto no funciona */
-    let comentarios= [];
-
+    let guardados= JSON.parse(localStorage.getItem("listaComentarios"));
+    let comentarios1= [];
 
     for (const objeto of guardados){
-            comentarios.push(new Comentario(objeto));
+            comentarios1.push(new Comentario(objeto));
     }
-    console.log(comentarios);
-     
+      for (const contador of comentarios1){
+        $("#contacto-comentarios").append(
+        `<div><h3> Nombre: ${comentarios1[contador].nombre}</h3>
+        </div>`)
+        console.log(comentarios1[contador])}
 }
     $("#contacto-boton-enviar").on('click', function () {
 
         let nombre= $('#contacto-nombre').val();
         let email= $('#contacto-email').val();
         let mensaje= $('#contacto-comentario').val();
-        console.log("no"); /* no lo muestra por consola */
         comentarios.push(new Comentario(nombre, email, mensaje));
         guardarLocal("listaComentarios", JSON.stringify(comentarios));
         mostrarComentarios();

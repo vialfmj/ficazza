@@ -12,16 +12,22 @@ class Comentario {
 const guardarLocal = (clave, valor) => { localStorage.setItem(clave, valor) };
 function mostrarComentarios(){
     let guardados= JSON.parse(localStorage.getItem("listaComentarios"));
-    let comentarios1= [];
+    let mensajes= [];
+    let nombres=[];
 
-    for (const objeto of guardados){
-            comentarios1.push(new Comentario(objeto));
+     for (const objeto of guardados){
+            mensajes.push(objeto.mensaje);
+            nombres.push(objeto.nombre);            
     }
-      for (const contador of comentarios1){
-        $("#contacto-comentarios").append(
-        `<div><h3> Nombre: ${comentarios1[contador].nombre}</h3>
-        </div>`)
-        console.log(comentarios1[contador])}
+    $("#contacto-comentarios").prepend(
+        `<div>
+        <h3> ${nombres[nombres.length-1]} dijo: ${mensajes[mensajes.length-1]}<h3><div>`
+        ) 
+        
+
+
+
+
 }
     $("#contacto-boton-enviar").on('click', function () {
 

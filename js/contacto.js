@@ -20,7 +20,7 @@ function mostrarComentarios(){
             nombres.push(objeto.nombre);            
     }
     $("#contacto-comentarios").prepend(
-        `<div>
+        `<div class="card comentario">
         <h3> ${nombres[nombres.length-1]} dijo: ${mensajes[mensajes.length-1]}<h3><div>`
         ) 
         

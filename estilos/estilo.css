@@ -338,7 +338,11 @@ footer {
 
 .contacto-contenedor {
   border: 1px solid #5c8d89; }
-
+.comentario{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
 /* Estilo seccion Carta */
 .carta-encabezado {
   display: flex;

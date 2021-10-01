@@ -1,0 +1,23 @@
+[
+{"lunes":{
+    "estado" : "Disponible"
+}},
+{"martes":{
+    "estado": "Reservado"
+}},
+{"miercoles":{
+    "estado": "Reservado"
+}},
+{"jueves":{
+    "estado": "Disponible"
+}},
+{"viernes":{
+    "estado": "Reservado"
+}},
+{"sabado":{
+    "estado": "Disponible"
+}},
+{"domingo":{
+    "estado": "Disponible"
+}}
+]

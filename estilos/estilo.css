@@ -332,6 +332,20 @@ footer {
   display: flex;
   justify-content: center; }
 
+.reservado{
+  background-color: rgb(191, 71, 71);
+}
+.disponible{
+  background-color: rgb(52, 153, 52);
+}
+
+.mensaje-exito{
+  
+  border: 2px solid #84b1b5;
+    background-color: #c8dee1;
+    display: flex;
+    justify-content: center;
+}
 /* Estilo seccion Contacto */
 .contacto-titulo {
   text-align: center; }

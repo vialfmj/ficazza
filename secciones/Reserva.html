@@ -70,7 +70,7 @@
         <div class="container-fluid reserva-titulo">
             <h2>Seccion de reservas</h2>
         </div>
-        <div class="container-fluid col-sm-8 reserva-formulario-contenedor">
+        <div class="container-fluid col-sm-8 reserva-formulario-contenedor" id="contenedor-formulario">
             <form id="reserva-formulario">
                 <div class="mb-3">
                     <label for="reserva-nombre" class="form-label">Nombre</label>
@@ -84,20 +84,20 @@
                 </div>
                 <select id="reserva-sucursal" class="form-select form-select-sm" aria-label=".form-select-sm example">
                     <option selected>Elegi la sucursal en la cual deseas reservar</option>
-                    <option value="1">Primera Sucursal</option>
-                    <option value="2">Segunda Sucursal</option>
+                    <option value="Primera Sucursal">Primera Sucursal</option>
+                    <option value="Segunda Sucursal">Segunda Sucursal</option>
                 </select>
                 <select id="reserva-cantidad" class="form-select form-select-sm" aria-label=".form-select-sm example">
                     <option selected>Indicanos la cantidad de personas</option>
-                    <option value="1">Una</option>
-                    <option value="2">Dos</option>
-                    <option value="3">Tres</option>
-                    <option value="4">Cuatro</option>
-                    <option value="5">Cinco</option>
+                    <option value="Una">Una</option>
+                    <option value="Dos">Dos</option>
+                    <option value="Tres">Tres</option>
+                    <option value="Cuatro">Cuatro</option>
+                    <option value="Cinco">Cinco</option>
 
                 </select>
                 <select id="reserva-dia" class="form-select form-select-sm mb-3" aria-label=".form-select-lg example">
-                    <option selected>Dia</option>
+                    <option selected value="7">Dia</option>
                     <option value="0">Lunes</option>
                     <option value="1">Martes</option>
                     <option value="2">Miercoles</option>
@@ -107,9 +107,10 @@
                     <option value="6">Domingo</option>
                 </select>
                 <div id="reserva-consulta">
-                    <button id="reserva-consulta-boton">Consultar dias disponibles</button>
+                    <button id="reserva-consulta-boton" class="btn boton">Consultar dias disponibles</button>
 
                 </div>
+                <div id="reserva-disponibilidad" class="calendario" ></div>
                 <div class="mb-3 form-check">
                     <input type="checkbox" class="form-check-input" id="exampleCheck1">
                     <label class="form-check-label" for="exampleCheck1">Captcha</label>
@@ -117,7 +118,6 @@
                 <button id="boton-enviar" type="button" class="btn boton">Enviar</button>
             </form>
         </div>
-        <div id="reservas-hechas"></div>
 
     </main>
 

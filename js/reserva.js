@@ -40,8 +40,6 @@ function reservar(reserva) {
     let dia=convertirDia(reserva.dia);
     let sucursal= reserva.sucursal;
 
-    console.log("personas vale:"+personas);
-
     $( '#contenedor-formulario' ).fadeOut( "slow", function() {
         // Animation complete.
       });
@@ -77,7 +75,6 @@ function mostrarDias(info){
         else{
             clase ='reservado';
         }
-        console.log(clase)
         $("#reserva-disponibilidad").append(`<div class="${clase}"> 
             <p> el dia `+semana[index]+` esta: `+info[index][semana[index]]["estado"]+` </p><br>
          </div>`)

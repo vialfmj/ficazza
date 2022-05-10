@@ -1,4 +1,26 @@
 /* queries de la seccion locales */
+@media screen and (min-width: 576px) {
+    .servicios-contenedor{
+            display: flex;
+            justify-content: space-around;
+    }
+    .servicios-vigilancia{
+        height: 50%;
+        width: 15%;
+    }
+    .servicios-estacionamiento{
+        height: 50%;
+        width: 15%;
+
+        
+    }
+    .servicios-wifi{
+        height: 50%;
+        width: 15%;
+
+    }
+    
+}
 @media only screen and (max-width: 576px) {
 
     .sucursales{
